@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ChargesDashboard from "./components/pages/dashboard/charges";
+import Work from "./components/pages/dashboard/work";
+import Employee from "./components/pages/employee";
+import Project from "./components/pages/project";
+import RecordWork from "./components/pages/recordwork";
+import Charges from "./components/pages/charges";
+
+export class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/dashboard-charges">
+            <ChargesDashboard />
+          </Route>
+          <Route path="/employee">
+            <Employee />
+          </Route>
+          <Route path="/project">
+            <Project />
+          </Route>
+          <Route path="/record-work">
+            <RecordWork />
+          </Route>
+          <Route path="/charges">
+            <Charges />
+          </Route>
+          <Route path="/">
+            <Work />
+          </Route>
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
