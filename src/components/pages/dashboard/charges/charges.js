@@ -145,10 +145,9 @@ class Charges extends Component {
     options.xAxis.categories = Sortingnames(charges_type_name);
     options.series = dataset;
 
-    console.log(Sortingnames(charges_type_name));
-
     return (
       <Layout title="สรุปข้อมูลค่าใช้จ่าย">
+         <h2 style={{ fontWeight: "600" }}>สรุปข้อมูลค่าใช้จ่าย</h2>
         <div style={{ maxWidth: "1600px" }}>
           <HighchartsReact
             highcharts={Highcharts}

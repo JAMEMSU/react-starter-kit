@@ -13,8 +13,8 @@ export class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/dashboard-charges">
-            <ChargesDashboard />
+          <Route path="/dashboard-work">
+            <Work />
           </Route>
           <Route path="/employee">
             <Employee />
@@ -29,7 +29,7 @@ export class App extends Component {
             <Charges />
           </Route>
           <Route path="/">
-            <Work />
+            <ChargesDashboard />
           </Route>
         </Switch>
       </Router>

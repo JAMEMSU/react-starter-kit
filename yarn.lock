@@ -17,6 +17,13 @@
     gud "^1.0.0"
     warning "^4.0.3"
 
+"@ant-design/dark-theme@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@ant-design/dark-theme/-/dark-theme-1.0.3.tgz#f06b4d8c62eba547a80661b68400c181c991392b"
+  integrity sha512-jd7y7GSbhta7dUsoAIqdBSAzFN6tx6mZaps2r6h+NhYoifOo7TGzagVYkjPR/27s6FK2vwzBhLBU1XPaVicfVw==
+  dependencies:
+    "@ant-design/colors" "^3.1.0"
+
 "@ant-design/icons-react@~2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@ant-design/icons-react/-/icons-react-2.0.1.tgz#17a2513571ab317aca2927e58cea25dd31e536fb"
@@ -9655,6 +9662,11 @@ react-slick@~0.25.2:
     json2mq "^0.2.0"
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
+
+react-table@^7.0.0-rc.15:
+  version "7.0.0-rc.15"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-7.0.0-rc.15.tgz#bb855e4e2abbb4aaf0ed2334404a41f3ada8e13a"
+  integrity sha512-ofMOlgrioHhhvHjvjsQkxvfQzU98cqwy6BjPGNwhLN1vhgXeWi0mUGreaCPvRenEbTiXsQbMl4k3Xmx3Mut8Rw==
 
 react-transition-group@^2.3.1:
   version "2.9.0"

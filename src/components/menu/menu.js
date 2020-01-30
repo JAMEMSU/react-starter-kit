@@ -2,28 +2,23 @@ import React, { Component } from "react";
 import { Menu, Icon } from "antd";
 import { Link } from "react-router-dom";
 
-const { SubMenu } = Menu;
-
 class MenuNavbar extends Component {
   render() {
     return (
-      <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
-        <SubMenu
-          key="sub1"
-          title={
-            <span>
-              <Icon type="pie-chart" />
-              <span>Dashboard</span>
-            </span>
-          }
-        >
-          <Menu.Item key="1">
-            <Link to="/">Dashboard Work</Link>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <Link to="/dashboard-charges">Dashboard Charges</Link>
-          </Menu.Item>
-        </SubMenu>
+      <Menu theme="dark" defaultSelectedKeys={[""]} mode="inline">
+        <Menu.Item key="1">
+          <Link to="/">
+            <Icon type="bar-chart" />
+            <span>กราฟสรุปค่าใช้จ่าย</span>
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="2">
+          <Link to="/dashboard-work">
+            <Icon type="bar-chart" />
+            <span>กราฟสรุปการทำงาน</span>
+          </Link>
+        </Menu.Item>
+
         <Menu.Item key="3">
           <Link to="/employee">
             <Icon type="user" />
